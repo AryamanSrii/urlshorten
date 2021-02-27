@@ -6,7 +6,7 @@ import clipboard
 window = Tk()
 
 #set deafault window size
-window.geometry("400x200") # width x height
+window.geometry("800x800") # width x height
 
 # make window not resizable
 window.resizable(True, True)  # not resizable in x and y
@@ -49,7 +49,7 @@ def short_url():
   try:
     s = pyshorteners.Shortener()
     url = url_input.get()
-    final_result = s.AmrevX.short(url)
+    final_result = s.tinyurl.short(url)
     str_url.set(final_result)
     url_input.delete(0, END) # clear input
   except:
